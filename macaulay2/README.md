@@ -37,10 +37,13 @@ Make sure these packages are loaded in your session before running the main func
 ## Usage
 
 loadPackage "Binomials";
+
 loadPackage "TorAlgebra";
+
 load "TestGorenstein.m2";
 
 L = value get("weak_polyplets_n4.txt");
+
 TestGor(L);
 
 The program outputs statistics, writes to a file PalGor_<rank>.txt the collections satisfying the conjecture, and returns counterexamples if any exist.
