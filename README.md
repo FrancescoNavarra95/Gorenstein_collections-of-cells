@@ -1,5 +1,8 @@
 # Collections of Cells, Binomial Ideals, and Gorenstein Property
 
+[![DOI](https://zenodo.org/badge/1059531508.svg)](https://doi.org/10.5281/zenodo.17155552)
+
+
 This project is devoted to testing the following conjecture:
 
 > If $P$ is a domino-stable collection of cells and $K[P]$ is not a domain, then $K[P]$ is Gorenstein.
