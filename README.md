@@ -37,7 +37,7 @@ A collection is represented as a list `Q`, whose elements are the cells, each sp
  ``` 
 is encoded as:  Q={{{1,1},{2,2}},{{2,1},{3,2}},{{2,2},{3,3}}} 
 
-3. **Output_Pictures/**  
+3. **Output_in_Pictures/**  
 - Contains the Python script `From_List_To_Picture.py`.  
 - This script takes as input the file `input_collections.txt` and generates a folder containing the corresponding visualizations of the collections.  
 - The directory also includes all precomputed lists and images of collections of cells (up to rank 8) and polyominoes (up to rank 11) that are domino-stable, non-domain, and Gorenstein.
