@@ -1,4 +1,4 @@
-# Gorensteiness of Collections of Cells
+#  COLLECTIONS OF CELLS, BINOMIAL IDEALS AND GORENSTEIN PROPERTY
 
 This repository provides a [Macaulay2](http://www2.macaulay2.com/Macaulay2/) implementation for studying the Gorensteiness of the non-prime binomial ideals associated with collections of cells.  
 
