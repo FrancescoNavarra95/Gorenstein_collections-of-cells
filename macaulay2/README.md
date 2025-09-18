@@ -1,11 +1,18 @@
-#  COLLECTIONS OF CELLS, BINOMIAL IDEALS AND GORENSTEIN PROPERTY
+# Macaulay2 Code for Collections of Cells, Binomial Ideals and Gorenstein property
 
-This repository provides a [Macaulay2](http://www2.macaulay2.com/Macaulay2/) implementation for studying the Gorensteiness of the non-prime binomial ideals associated with collections of cells.  
+This folder provides a [Macaulay2](http://www2.macaulay2.com/Macaulay2/) implementation for studying the Gorensteiness of the non-prime binomial ideals associated with collections of cells.  
 
-The project is designed to test the following conjecture:
+The code is designed to test the following conjecture:
 
-> **Conjecture.**  
-> If $P$ is a domino-stable collection of cells (equivalently, the switching rook polynomial of $P$ is palindromic) and the coordinate ring $K[P]$ is not a domain, then $K[P]$ is Gorenstein.
+ **Conjecture.**  
+ If $P$ is a domino-stable collection of cells (equivalently, the switching rook polynomial of $P$ is palindromic) and the coordinate ring $K[P]$ is not a domain, then $K[P]$ is Gorenstein.
+
+Moreover, two `.zip` archives are provided:  
+- one contains the lists of collections of cells up to rank 8,  
+- the other contains the lists of polyominoes up to rank 11.
+
+Finally, two .txt files contain the output of the conjecture verification: for collections of cells up to rank 8 and for polyominoes up to rank 11.
+These computations can be reproduced on a standard machine and do not require High Performance Computers.
 
 ---
 
@@ -21,30 +28,23 @@ The script is divided into two main parts:
    - A function to check whether a polynomial with non-null coefficients is palindromic.  
    - A routine `TestGor` that verifies the conjecture on a given list of collections of cells.  
 
+A collection is represented as a list `Q`, whose elements are the cells, each specified by its diagonal corners.  
+Example:
+```
+      __
+   __|__|
+  |__|__|
+
+ ``` 
+is encoded as:  Q={{{1,1},{2,2}},{{2,1},{3,2}},{{2,2},{3,3}}}
+
+
 ---
 
 ## Requirements
 
-- [Macaulay2](http://www2.macaulay2.com/Macaulay2/)  
 - Packages:  
   - `Binomials`  
   - `TorAlgebra`  
 
 Make sure these packages are loaded in your session before running the main function.  
-
----
-
-## Usage
-
-loadPackage "Binomials";
-
-loadPackage "TorAlgebra";
-
-load "TestGorenstein.m2";
-
-L = value get("weak_polyplets_n4.txt");
-
-TestGor(L);
-
-The program outputs statistics, writes to a file PalGor_<rank>.txt the collections satisfying the conjecture, and returns counterexamples if any exist.
-
