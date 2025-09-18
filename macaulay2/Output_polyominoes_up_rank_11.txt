@@ -1,0 +1,269 @@
+cicciuzzo@DESKTOP-87D8AEJ:~$ cd /mnt/c/Users/franc/Desktop/Macaulay2/Polyominoes/List_Polyominoes/
+cicciuzzo@DESKTOP-87D8AEJ:/mnt/c/Users/franc/Desktop/Macaulay2/Polyominoes/List_Polyominoes$ M2
+Macaulay2, version 1.22
+with packages: ConwayPolynomials, Elimination, IntegralClosure, InverseSystems, Isomorphism, LLLBases,
+               MinimalPrimes, OnlineLookup, PrimaryDecomposition, ReesAlgebra, Saturation, TangentCone
+
+i1 : loadPackage "Binomials";
+
+i2 : loadPackage "TorAlgebra";
+
+i3 : load "TestGorenstein.m2";
+
+i4 : L=value get("polyomino_output_n9.txt");
+
+i5 : time TestGor(L)
+Iteration 1 over 1285
+Iteration 101 over 1285
+Iteration 201 over 1285
+Iteration 301 over 1285
+Iteration 401 over 1285
+Iteration 501 over 1285
+Iteration 601 over 1285
+Iteration 701 over 1285
+Iteration 801 over 1285
+Iteration 901 over 1285
+Iteration 1001 over 1285
+Iteration 1101 over 1285
+Iteration 1201 over 1285
+# non-prime collections of cells: 2 over 1285
+# domino-stable collections of cells, among non-prime: 0
+# domino-stable Gorenstein collections of cells, among non-prime: 0
+Conjecture is ok
+     -- used 202.201 seconds
+
+i6 : L=value get("polyomino_output_n10.txt");
+
+i7 : time TestGor(L)
+Iteration 1 over 4655
+Iteration 101 over 4655
+Iteration 201 over 4655
+Iteration 301 over 4655
+Iteration 401 over 4655
+Iteration 501 over 4655
+Iteration 601 over 4655
+Iteration 701 over 4655
+Iteration 801 over 4655
+Iteration 901 over 4655
+Iteration 1001 over 4655
+Iteration 1101 over 4655
+Iteration 1201 over 4655
+Iteration 1301 over 4655
+Iteration 1401 over 4655
+Iteration 1501 over 4655
+Iteration 1601 over 4655
+Iteration 1701 over 4655
+Iteration 1801 over 4655
+Iteration 1901 over 4655
+Iteration 2001 over 4655
+Iteration 2101 over 4655
+Iteration 2201 over 4655
+Iteration 2301 over 4655
+Iteration 2401 over 4655
+Iteration 2501 over 4655
+Iteration 2601 over 4655
+Iteration 2701 over 4655
+Iteration 2801 over 4655
+Iteration 2901 over 4655
+Iteration 3001 over 4655
+Iteration 3101 over 4655
+Iteration 3201 over 4655
+Iteration 3301 over 4655
+Iteration 3401 over 4655
+Iteration 3501 over 4655
+Iteration 3601 over 4655
+Iteration 3701 over 4655
+Iteration 3801 over 4655
+Iteration 3901 over 4655
+Iteration 4001 over 4655
+Iteration 4101 over 4655
+Iteration 4201 over 4655
+Iteration 4301 over 4655
+Iteration 4401 over 4655
+Iteration 4501 over 4655
+Iteration 4601 over 4655
+# non-prime collections of cells: 12 over 4655
+# domino-stable collections of cells, among non-prime: 0
+# domino-stable Gorenstein collections of cells, among non-prime: 0
+Conjecture is ok
+     -- used 970.955 seconds
+
+i8 : L=value get("polyomino_output_n11.txt");
+
+i9 : time TestGor(L)
+Iteration 1 over 17073
+Iteration 101 over 17073
+Iteration 201 over 17073
+Iteration 301 over 17073
+Iteration 401 over 17073
+Iteration 501 over 17073
+Iteration 601 over 17073
+Iteration 701 over 17073
+Iteration 801 over 17073
+Iteration 901 over 17073
+Iteration 1001 over 17073
+Iteration 1101 over 17073
+Iteration 1201 over 17073
+Iteration 1301 over 17073
+Iteration 1401 over 17073
+Iteration 1501 over 17073
+Iteration 1601 over 17073
+Iteration 1701 over 17073
+Iteration 1801 over 17073
+Iteration 1901 over 17073
+Iteration 2001 over 17073
+Iteration 2101 over 17073
+Iteration 2201 over 17073
+Iteration 2301 over 17073
+Iteration 2401 over 17073
+Iteration 2501 over 17073
+Iteration 2601 over 17073
+Iteration 2701 over 17073
+Iteration 2801 over 17073
+Iteration 2901 over 17073
+Iteration 3001 over 17073
+Iteration 3101 over 17073
+Iteration 3201 over 17073
+Iteration 3301 over 17073
+Iteration 3401 over 17073
+Iteration 3501 over 17073
+Iteration 3601 over 17073
+Iteration 3701 over 17073
+Iteration 3801 over 17073
+Iteration 3901 over 17073
+Iteration 4001 over 17073
+Iteration 4101 over 17073
+Iteration 4201 over 17073
+Iteration 4301 over 17073
+Iteration 4401 over 17073
+Iteration 4501 over 17073
+Iteration 4601 over 17073
+Iteration 4701 over 17073
+Iteration 4801 over 17073
+Iteration 4901 over 17073
+Iteration 5001 over 17073
+Iteration 5101 over 17073
+Iteration 5201 over 17073
+Iteration 5301 over 17073
+Iteration 5401 over 17073
+Iteration 5501 over 17073
+Iteration 5601 over 17073
+Iteration 5701 over 17073
+Iteration 5801 over 17073
+Iteration 5901 over 17073
+Iteration 6001 over 17073
+Iteration 6101 over 17073
+Iteration 6201 over 17073
+Iteration 6301 over 17073
+Iteration 6401 over 17073
+Iteration 6501 over 17073
+Iteration 6601 over 17073
+Iteration 6701 over 17073
+Iteration 6801 over 17073
+Iteration 6901 over 17073
+Iteration 7001 over 17073
+Iteration 7101 over 17073
+Iteration 7201 over 17073
+Iteration 7301 over 17073
+Iteration 7401 over 17073
+Iteration 7501 over 17073
+Iteration 7601 over 17073
+Iteration 7701 over 17073
+Iteration 7801 over 17073
+Iteration 7901 over 17073
+Iteration 8001 over 17073
+Iteration 8101 over 17073
+Iteration 8201 over 17073
+Iteration 8301 over 17073
+Iteration 8401 over 17073
+Iteration 8501 over 17073
+Iteration 8601 over 17073
+Iteration 8701 over 17073
+Iteration 8801 over 17073
+Iteration 8901 over 17073
+Iteration 9001 over 17073
+Iteration 9101 over 17073
+Iteration 9201 over 17073
+Iteration 9301 over 17073
+Iteration 9401 over 17073
+Iteration 9501 over 17073
+Iteration 9601 over 17073
+Iteration 9701 over 17073
+Iteration 9801 over 17073
+Iteration 9901 over 17073
+Iteration 10001 over 17073
+Iteration 10101 over 17073
+Iteration 10201 over 17073
+Iteration 10301 over 17073
+Iteration 10401 over 17073
+Iteration 10501 over 17073
+Iteration 10601 over 17073
+Iteration 10701 over 17073
+Iteration 10801 over 17073
+Iteration 10901 over 17073
+Iteration 11001 over 17073
+Iteration 11101 over 17073
+Iteration 11201 over 17073
+Iteration 11301 over 17073
+Iteration 11401 over 17073
+Iteration 11501 over 17073
+Iteration 11601 over 17073
+Iteration 11701 over 17073
+Iteration 11801 over 17073
+Iteration 11901 over 17073
+Iteration 12001 over 17073
+Iteration 12101 over 17073
+Iteration 12201 over 17073
+Iteration 12301 over 17073
+Iteration 12401 over 17073
+Iteration 12501 over 17073
+Iteration 12601 over 17073
+Iteration 12701 over 17073
+Iteration 12801 over 17073
+Iteration 12901 over 17073
+Iteration 13001 over 17073
+Iteration 13101 over 17073
+Iteration 13201 over 17073
+Iteration 13301 over 17073
+Iteration 13401 over 17073
+Iteration 13501 over 17073
+Iteration 13601 over 17073
+Iteration 13701 over 17073
+Iteration 13801 over 17073
+Iteration 13901 over 17073
+Iteration 14001 over 17073
+Iteration 14101 over 17073
+Iteration 14201 over 17073
+Iteration 14301 over 17073
+Iteration 14401 over 17073
+Iteration 14501 over 17073
+Iteration 14601 over 17073
+Iteration 14701 over 17073
+Iteration 14801 over 17073
+Iteration 14901 over 17073
+Iteration 15001 over 17073
+Iteration 15101 over 17073
+Iteration 15201 over 17073
+Iteration 15301 over 17073
+Iteration 15401 over 17073
+Iteration 15501 over 17073
+Iteration 15601 over 17073
+Iteration 15701 over 17073
+Iteration 15801 over 17073
+Iteration 15901 over 17073
+Iteration 16001 over 17073
+Iteration 16101 over 17073
+Iteration 16201 over 17073
+Iteration 16301 over 17073
+Iteration 16401 over 17073
+Iteration 16501 over 17073
+Iteration 16601 over 17073
+Iteration 16701 over 17073
+Iteration 16801 over 17073
+Iteration 16901 over 17073
+Iteration 17001 over 17073
+# non-prime collections of cells: 73 over 17073
+# domino-stable collections of cells, among non-prime: 3
+# domino-stable Gorenstein collections of cells, among non-prime: 3
+Conjecture is ok
+     -- used 5368.32 seconds
