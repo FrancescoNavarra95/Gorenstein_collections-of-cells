@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software and datasets, please cite it as below."
+authors:
+  - family-names: "Navarra"
+    given-names: "Francesco"
+    affiliation: "Sabancı University"
+title: "Collections of Cells, Binomial Ideals, and the Gorenstein Property"
+version: "1"
+doi: "10.5281/zenodo.17155553"
+date-released: 2025-09-18
+url: "https://doi.org/10.5281/zenodo.17155553"
+license: "MIT"
