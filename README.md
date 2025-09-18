@@ -1,34 +1,34 @@
----------------------------------------------------------------------------------------------------
- COLLECTIONS OF CELLS, BINOMIAL IDEALS, AND GORENSTEIN PROPERTY 
----------------------------------------------------------------------------------------------------
+# Collections of Cells, Binomial Ideals, and Gorenstein Property
 
-This project is devoted to testing the following conjectures:
+This project is devoted to testing the following conjecture:
 
-*If $P$ is a domino-stable collection of cells and $K[P]$ is not a domain, then $K[P]$ is Gorenstein
+> If $P$ is a domino-stable collection of cells and $K[P]$ is not a domain, then $K[P]$ is Gorenstein.
 
----------------------------------------------------------------------------------------------------
- DIRECTORIES
----------------------------------------------------------------------------------------------------
+---
+
+## Directories
 
 We provide two main directories:
 
-(1) **SageMath/**  
-    - Contains the code to compute the set L of all collections of cells of a fixed rank n.  
-    - The scripts generate the collections up to symmetries.  
-    - You can find the relevant code in this directory.
+1. **SageMath/**  
+   - Contains the code to compute the set `L` of all collections of cells of a fixed rank `n`.  
+   - The scripts generate the collections up to symmetries.  
+   - Relevant code can be found in this directory.
 
-(2) **Macaulay2/**  
-    - Contains the code `GorensteinTest.m2`.  
-    - For each collection Q in L, the program:  
-        * computes the h-polynomial of the coordinate ring of Q;  
-        * test if $I_P$ is not-prime and the h-polynomial is palindromic;
-        * in such a case, it tests if $K[P]$ is Gorenstein.
+2. **Macaulay2/**  
+   - Contains the script `GorensteinTest.m2`.  
+   - For each collection `Q` in `L`, the program:  
+     * Computes the $h$-polynomial of the coordinate ring of `Q`.  
+     * Tests if the inner 2-minor ideal $I_P$ is non-prime and the $h$-polynomial is palindromic.  
+     * If both conditions hold, it tests whether $K[P]$ is Gorenstein.
 
-Moreover, two `.zip` archives are provided:  
-- one contains the lists of collections of cells up to rank 8,  
-- the other contains the lists of polyominoes up to rank 11.  
-These lists are already generated and stored in `.txt` format, ready to use with the Macaulay2 code.
+Additionally, two `.zip` archives are provided:  
+- One contains lists of collections of cells up to rank 8.  
+- The other contains lists of polyominoes up to rank 11.  
+These lists are in `.txt` format, ready to use with the Macaulay2 code.  
+
 A collection is represented as a list `Q`, whose elements are the cells, each specified by its diagonal corners. For example:
+
 ```
       __
    __|__|
