@@ -4,7 +4,7 @@
 
 This project is devoted to testing the following conjectures:
 
-      - If $P$ is a domino-stable collection of cells and $K[P]$ is not a domain, then $K[P]$ is Gorenstein
+*If $P$ is a domino-stable collection of cells and $K[P]$ is not a domain, then $K[P]$ is Gorenstein
 
 ---------------------------------------------------------------------------------------------------
  DIRECTORIES
