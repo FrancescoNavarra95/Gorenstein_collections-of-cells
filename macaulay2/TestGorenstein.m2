@@ -125,7 +125,6 @@ PolyoIdeal=(Q)->(
 -- Determine whether a polynomial f in QQ[x] with non-null coefficient is palindromic. 
 -- If f = a_0 + a_1 x + ... + a_d x^d then f is palindromic if a_i = a_{d-i} for all i = 0, ..., d.
 -- The function returns true when palindromic and false otherwise.
---
 ---------------------------------------------------------------------------------------------------
 isPalindromic=(f)->(
     Coeff := flatten entries ((coefficients f)#1);
