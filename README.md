@@ -38,7 +38,9 @@ A collection is represented as a list `Q`, whose elements are the cells, each sp
   |__|__|
 
  ``` 
-is encoded as:  Q={{{1,1},{2,2}},{{2,1},{3,2}},{{2,2},{3,3}}} 
+is encoded as:  Q={{{1,1},{2,2}},{{2,1},{3,2}},{{2,2},{3,3}}}
+
+We also provide three `.zip` archives — *Collection_of_Cells_Gor_Rank9*, *Collection_of_Cells_Gor_Rank10*, and *Polyominoes_Gor_Rank11* — which contain all the instructions (including the `.m2` and `.slurm` scripts) and the corresponding output folders and log files from the computations performed on the Tosun HPC cluster.
 
 3. **Output_in_Pictures/**  
 - Contains the Python script `From_List_To_Picture.py`.  
@@ -62,7 +64,7 @@ is encoded as:  Q={{{1,1},{2,2}},{{2,1},{3,2}},{{2,2},{3,3}}}
        * `Collections_of_cells_up_rank_8.zip`  
        * `Polyominoes_up_rank_11.zip`  
    - Extract these archives **into the `macaulay2/` directory**.  
-   - After extraction, the `.txt` files with the collections will be available in the same folder where `RookPol.m2` is located.
+   - After extraction, the `.txt` files with the collections will be available in the same folder where `TestGorenstein.m2` is located.
 
 3. **Run the code in Macaulay2**  
    - Open a terminal and navigate to the `macaulay2/` directory;
