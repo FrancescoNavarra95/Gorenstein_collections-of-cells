@@ -45,7 +45,7 @@ We also provide three `.zip` archives — *Collection_of_Cells_Gor_Rank9*, *Coll
 3. **Output_in_Pictures/**  
 - Contains the Python script `From_List_To_Picture.py`.  
 - This script takes as input the file `input_collections.txt` and generates a folder containing the corresponding visualizations of the collections.  
-- The directory also includes all precomputed lists and images of collections of cells (up to rank 8) and polyominoes (up to rank 11) that are domino-stable, non-domain, and Gorenstein.
+- The directory also includes all precomputed lists and images of collections of cells (up to rank 8) and polyominoes (with rank 11) that are domino-stable, non-domain, and Gorenstein.
 
 
 ---------------------------------------------------------------------------------------------------
