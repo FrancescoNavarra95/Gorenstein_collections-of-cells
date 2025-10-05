@@ -14,6 +14,8 @@ Moreover, two `.zip` archives are provided:
 Finally, two .txt files contain the output of the conjecture verification: for collections of cells up to rank 8 and for polyominoes up to rank 11.
 These computations can be reproduced on a standard machine and do not require High Performance Computers.
 
+We also provide three `.zip` archives — *Collection_of_Cells_Gor_Rank9*, *Collection_of_Cells_Gor_Rank10*, and *Polyominoes_Gor_Rank11* — which include all the necessary instructions (the `.m2` and `.slurm` scripts), together with the corresponding output folders in log-folders from the computations carried out on the Tosun HPC cluster.
+
 ---
 
 ## Code Structure
